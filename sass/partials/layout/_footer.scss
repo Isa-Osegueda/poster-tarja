@@ -12,39 +12,13 @@ footer {
         display: flex;
         flex-direction: row; 
         justify-content: space-between;
-        margin: 0 10%;
-        
+        margin: 0 10%;    
     }
 
     a {
         text-decoration: none;
         color: white;
         margin-top: 20px;
-        font-size: 20px;
-        
-    }
-
-    @include query(720px) {
-        h4,p,a {
-            font-size: 20px;
-        }
-
-        .container-info {
-            margin: 0 15%;
-        }
-    }
-
-    @include query(320px) {
-        h4 {
-            font-size: 8px;
-        }
-        p,a {
-            font-size: 10px;
-        }
-
-        .container-info {
-            margin: 0;
-        }
-    }
-    
+        font-size: 20px;    
+    }   
 }
