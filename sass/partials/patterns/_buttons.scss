@@ -1,0 +1,40 @@
+/*.btn {
+
+}*/
+
+.btn--principal {
+    background-color:$color-contrast;
+
+    &:hover {
+        background-color:$color-hover;
+    }
+}
+
+.btn--secundary {
+    background-color:$color-contrast;
+
+    &:hover {
+        background-color:$color-hover;
+    }
+}
+
+.btn-principal {
+    width: 90%;
+    border: 2px solid #fff;  
+    font-size: 35px;
+    margin: 30px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    transition: width 0.5s;
+    border-radius: 3%;
+    
+}
+
+.btn-principal:hover {
+    background-color: #fff;
+    color: black;
+    width: 95%;
+}
+
+    
