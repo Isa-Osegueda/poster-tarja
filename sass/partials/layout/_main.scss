@@ -1,0 +1,124 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+
+    .container-logo {
+        width: 35%;
+        height: 400px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .items {
+        align-self: flex-end;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .date {
+        align-self: flex-start;
+        text-align: center;
+        margin-left: 85px;
+
+        h3 {
+            font-size: 20px; 
+                @include query(1024px) {
+                    font-size: 30px;
+                }      
+        }
+        h1 {
+            font-size: 50px;
+                @include query(1024px) {
+                    font-size: 70px;
+                }
+        }
+    }
+
+    img {
+        width: 95%;
+    }
+
+    @include query(320px) {
+        .container-logo {
+            width: 80%;
+        }
+
+        img {
+            width: 95%;
+        }  
+
+        .items {
+            align-self: flex-start;
+            font-size: 15px;
+        }
+
+        .date {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    @include query(720px) {
+        .container-logo {
+            width: 60%;
+        }
+
+        img {
+            width: 100%;
+        }    
+
+        .items {
+            align-self: flex-start;
+        }
+
+        .date {
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px; 
+        }
+    }
+
+    @include query(1024px) {
+        .container-logo {
+            width: 60%;
+        }
+        img {
+            width: 100%;
+        }    
+        .items {
+            align-self: flex-start;
+            font-size: 25px;
+        }
+
+        .date {
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 200px; 
+            margin-bottom: 100px; 
+        }
+    }
+
+    @include query(1200px) {
+        .container-logo {
+            width: 50%;
+        }
+        img {
+            width: 85%; 
+        }    
+        .items {
+            align-self: flex-end;
+            font-size: 30px;
+        }
+
+        .date {
+            align-self: flex-start;
+            text-align: center;
+            margin-left: 85px;
+            margin-bottom: 70px;
+        }
+    }
+}

@@ -7,7 +7,6 @@ footer {
     right: 0;
     left: 0;
    
-    
     .container-info {
         display: flex;
         flex-direction: row; 
@@ -20,5 +19,32 @@ footer {
         color: white;
         margin-top: 20px;
         font-size: 20px;    
-    }   
+    }  
+
+     @include query(320px) {
+        .container-info {
+           margin: 0 5%;
+       } 
+
+       .container-info,p,a {  
+           font-size: 5px;
+       }
+
+       a {
+           margin-top: 4px;
+       }
+    } 
+    
+    @include query(720px) {
+       .container-info {
+           font-size: 15px;
+           margin: 0 5%;
+       } 
+
+       p,a {
+           margin-top: 20px;
+           font-size: 15px;
+       }
+    }
 }
+
